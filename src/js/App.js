@@ -1,3 +1,4 @@
+import { CoCaRo, CoCaRoACT } from "./views/pages/CoCaRo.js";
 import { DoanSo, DoanSoACT } from "./views/pages/DoanSo.js";
 import { KeoBuaBao, KeoBuaBaoACT } from "./views/pages/KeoBuaBao.js";
 import { listPages } from "./views/pages/ListPages.js"
@@ -24,6 +25,11 @@ const appACT = () => {
                 containerElement.innerHTML = QuizGame()
                 QuizGameACT()
             }
+            else if(item.id == 4) {
+                containerElement.innerHTML = CoCaRo()
+                CoCaRoACT()
+            }
+
             comeBack.classList.toggle('hidden')
         })
     })

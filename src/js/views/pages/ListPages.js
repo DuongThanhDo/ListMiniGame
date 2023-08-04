@@ -14,16 +14,8 @@ export const listPages = () => {
                 <button>Quiz game</button>
             </li>
             <li class="page-item" id="4">
-                <img src="./src/assets/img/anhNenKeoBuaBao.png" alt="">
-                <button>page 1</button>
-            </li>
-            <li class="page-item" id="5">
-                <img src="./src/assets/img/anhNenKeoBuaBao.png" alt="">
-                <button>page 1</button>
-            </li>
-            <li class="page-item" id="6">
-                <img src="./src/assets/img/anhNenKeoBuaBao.png" alt="">
-                <button>page 1</button>
+                <img src="./src/assets/img/anhNenCoCaRo.png" alt="">
+                <button>Cờ ca rô</button>
             </li>
         </ul>
     `
