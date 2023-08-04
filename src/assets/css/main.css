@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Poppins" , sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+#app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 200px;
+    background-color: #fff;
+}
+
+.come-back {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    font-size: 40px;
+    left: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.come-back:hover {
+    scale: 110%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container {
+    width: 900px;
+    height: 540px;
+}
+
+.page-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.page-item {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px #686868;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    /* z-index: 3; */
+}
+
+.page-item img {
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+}
+
+.page-item button {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.page-item:hover img {
+    scale: 120%;
+}
+
+/* Games */
+.game {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: solid 2px #000;
+    background-color: rgb(224, 231, 235);
+}
+
+/* keo bua bao */
+.game__kbb {
+    display: flex;
+}
+
+.game__kbb-select-list {
+    width: 180px;
+    height: 100%;
+    display: flex;
+    border-right: solid 2px #000;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.game__kbb-select-item img {
+    width: 100px;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.game__kbb-select-item img:hover {
+    scale: 120%;
+}
+
+.game__kbb-display {
+    width: calc(100% - 180px);
+    padding: 24px 40px;
+}
+
+.game__kbb-display_header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px #000;
+    border-bottom: none;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.game__kbb-display_header p {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game__kbb-display_container {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    border: solid 2px #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.game__kbb-display_select-ban {
+    border-right: solid 2px #000;
+}
+
+.game__kbb-display_select-ban,
+.game__kbb-display_select-may {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Đoán Số */
+.game__ds-container {
+    width: 100%;
+    height: 420px;
+}
+
+.game__ds-container_header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 24px;
+}
+
+.game__ds-times {
+    display: flex;
+}
+
+.game__ds-times input {
+    width: 60px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+}
+
+.game__ds-container_display {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    padding: 20px 80px;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    border-top: solid 2px #000;
+    border-bottom: solid 2px #000;
+}
+
+.game__ds-container_result {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-bottom: solid 2px #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.game__ds-container_result input {
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+}
+
+.game__ds-container_result button {
+    width: 100px;
+    height: 60px;
+    margin-left: 40px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(5, 180, 249);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.game__ds-container_result button:active {
+    background-color: rgb(5, 111, 249);
+}
+
+.game__ds-reset {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game__ds-reset button {
+    width: 80px;
+    height: 36px;
+    border: none;
+    background-color: rgb(0, 195, 255);
+}
+
+.game__ds-reset button:active {
+    background-color: rgb(0, 145, 255);
+}
+
+/* Quiz game */
+.game__qg-header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: end;
+    align-items: center;
+    border-bottom: #000 solid 1px;
+}
+
+.game__qg-header input {
+    width: 40px;
+    margin: 0 40px 0 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.game__qg-container {
+
+}
+
+.game__qg-ctn_quesion {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.game__qg-answer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game__qg-answer-list {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.game__qg-answer-item {
+    height: 80px;
+    background-color: aqua;
+    margin: 12px;
+    padding: 0 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.game__qg-answer-item p {
+    margin-right: 8px;
+}
+
+.game__qg-answer-item:hover {
+    /* background-color: #8db5dc; */
+    padding-left: 20px;
+}
+
+.game__qg-dung {
+    background-color: #4fdf35;
+}
+
+.game__qg-sai {
+    background-color: #ef4646;
+}
