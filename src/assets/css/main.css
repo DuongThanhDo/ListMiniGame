@@ -46,6 +46,10 @@ body {
     scale: 110%;
 }
 
+.come-back:active {
+    scale: 100%;
+}
+
 .hidden {
     display: none !important;
 }
@@ -135,6 +139,10 @@ body {
 
 .game__kbb-select-item img:hover {
     scale: 120%;
+}
+
+.game__kbb-select-item img:active {
+    scale: 100%;
 }
 
 .game__kbb-display {
