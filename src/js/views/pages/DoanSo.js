@@ -62,7 +62,6 @@ export const DoanSoACT = () => {
                 kq = Math.floor(Math.random() * 100) + 1
                 timesText.value = 15
             }
-        
         }
         else {
             ctnDisplay.innerHTML = `Nhập lại đáp án`
