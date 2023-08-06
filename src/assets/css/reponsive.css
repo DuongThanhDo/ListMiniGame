@@ -1,0 +1,5 @@
+@media only screen and (max-width: 738px) {
+    #app {
+        padding: 0;
+    }
+}
