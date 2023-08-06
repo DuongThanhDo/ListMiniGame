@@ -61,7 +61,6 @@ export const QuizGameACT = () => {
                 if(index == stt) {
                     item.listAnswer.forEach((itemAnswer, indexAnswer) => {
                         if (itemAnswer.answer == answerText[vitri].textContent) {
-                            // console.log(itemAnswer.result);
                             if(itemAnswer.result == true) {
                                 btn.classList.add('game__qg-dung')
                                 quesion.textContent = `Đáp án chính xác`
@@ -90,9 +89,14 @@ export const QuizGameACT = () => {
             if (stt+1 == listQuestion.length) {
                 quesion.textContent = `Bạn đã Chiến Thắng`
                 sttText.value = 'Win'
+                setTimeout(() => {
+                    stt = 0
+                    sttText.value = stt + 1
+                    addQuiz()
+                }, 1000);
             }
         }
-    })    
+    })
 }
 
 // data
